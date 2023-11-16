@@ -15,19 +15,20 @@ repositories {
 }
 
 dependencies {
-    implementation files('lib/sslscan-core-1.0.0.jar')
     implementation 'org.springframework.boot:spring-boot-starter'
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok:1.18.12'
     annotationProcessor 'org.projectlombok:lombok:1.18.12'
-    implementation group: 'org.bouncycastle', name: 'bcprov-ext-jdk15on', version: '1.70'
-    implementation group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.70'
+//    implementation group: 'org.bouncycastle', name: 'bcprov-ext-jdk15on', version: '1.70'
+//    implementation group: 'org.bouncycastle', name: 'bcpkix-jdk15on', version: '1.70'
+
+    implementation group: 'org.bouncycastle', name: 'bcprov-jdk18on', version: '1.76'
+    implementation group: 'org.bouncycastle', name: 'bcpkix-jdk18on', version: '1.76'
+    implementation group: 'org.bouncycastle', name: 'bcutil-jdk18on', version: '1.76'
+
+
+
     implementation group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
-//    implementation 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
-
-//    implementation 'com.googlecode.juniversalchardet:juniversalchardet:2.0.1'
-
-//    testImplementation 'com.googlecode.juniversalchardet:juniversalchardet:1.0.3'
 
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 

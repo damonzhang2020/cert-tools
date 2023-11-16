@@ -1,4 +1,4 @@
-package com.certtools.csr.tools;
+package com.certtools.model;
 
 import lombok.Getter;
 import lombok.Setter;
